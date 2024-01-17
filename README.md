@@ -1,14 +1,13 @@
-# SimpleWebStreaming
-For the lecture TUT
-It contains music video, which uses no copyrighted information except author himself.
+# TRPGButtleSimulator
+For the class assignment
 
-# install and run sample program
+# install and run this program
 ```
 sudo apt update
 sudo apt upgrade
 sudo apt install nodejs npm
 sudo apt install git
-git clone https://github.com/KyojiUmemura/SimpleWebStreaming.git
-cd SimpleWebStreaming
+git clone https://github.com/tut193325/TRPGButtleSimulator.git
+cd TRPGButtleSimulator
 sh Run.sh &
 ```
