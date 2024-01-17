@@ -1,0 +1,98 @@
+<!DOCTYPE html>  <!-- HTML5 requires this line -->
+<!-- Sample file for HTML5, written by K. Umemura, 2019/06/06 -->
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title> TRPG buttle simulator</title>
+  <!-- This html is one example of music video page -->
+  <link rel="stylesheet" type="text/css" href="simple.css">
+  <!-- simple.js uses ID:"simple-target", and CLASS:"simple-target" -->
+  <script type="text/javascript" src="simple.js"></script>
+  </head>
+  <body> 
+  <!-- please note that, tags "div" with "id" are extensively used. -->
+  <!-- Neither format information, nor action information is here. -->
+    <!-- <div id="profile-part">
+      <div id="name-part"> Someone</div>
+      <div id="affliation-part"> Prof. </div>
+      <div id="picture-part"> <img src="umemura.jpg"> </div>
+    </div> -->
+    <div id="UI">
+      <div class=".status-grid">
+        Player status
+        <form name="playerSTRForm">
+          <label for="textInput">STR</label>
+          <input type="number" id="player-str" name="playerSTRInput">
+        </form>
+        <form name="playerCONForm">
+          <label for="textInput">CON</label>
+          <input type="number" id="player-con" name="playerCONInput">
+        </form>
+        <form name="playerSIZForm">
+          <label for="textInput">SIZ</label>
+          <input type="number" id="player-siz" name="playerSIZInput" oninput="changeStringSize(this.value, 'player-icon')">
+        </form>
+        <form name="playerDEXForm">
+          <label for="textInput">DEX</label>
+          <input type="number" id="player-dex" name="playerDEXInput">
+        </form>
+        <form name="playerPunchForm">
+          <label for="textInput">パンチ</label>
+          <input type="number" id="player-punch" name="playerPunchInput">
+        </form>
+        <button id="generate-bottom" onclick="generatePlayer()">Random generate</button>
+        <br><br>
+        Enemy status
+        <form name="enemySTRForm">
+          <label for="textInput">STR</label>
+          <input type="number" id="enemy-str" name="enemySTRInput">
+        </form>
+        <form name="enemyCONForm">
+          <label for="textInput">CON</label>
+          <input type="number" id="enemy-con" name="enemyCONInput">
+        </form>
+        <form name="enemySIZForm">
+          <label for="textInput">SIZ</label>
+          <input type="number" id="enemy-siz" name="enemySIZInput" oninput="changeStringSize(this.value, 'enemy-icon')">
+        </form>
+        <form name="enemyDEXForm">
+          <label for="textInput">DEX</label>
+          <input type="number" id="enemy-dex" name="enemyDEXInput">
+        </form>
+        <form name="enemyPunchForm">
+          <label for="textInput">パンチ</label>
+          <input type="number" id="enemy-punch" name="enemyPunchInput">
+        </form>
+      </div>
+      <button id="generate-bottom" onclick="generateEnemy()">Random generate</button>
+      <br><br><br>
+      <button id="start-bottom" onclick="gameStart()">Game start!</button>
+      <br><br>
+      <div class=".character-grid">
+        <div id="player-icon">Player</div>
+        <div id="player-HP">HP:0</div>
+        <button id="player-punch-bottom" onclick="playerPunch()">Punch!</button>
+        <br>
+        <div id="enemy-icon">Enemy</div>
+        <div id="enemy-HP">HP:0</div>
+      </div>
+      <div id="log"></div>
+    </div>
+
+
+
+<!--     <div id="music-part">
+      <ul id="music-list">
+	    The followings are not buttons, nor anchor tags. -->
+<!--	<li class="music-information simple-chapter"> (0:02) BWV.Anh.114 by Christian Petzold </li>
+	<li class="music-information simple-chapter"> (1:35) K.545 by Wolfgang Amadeus Mozart </li>
+	<li class="music-information simple-chapter"> (4:57) WoO 59 by Ludwig van Beethoven </li>
+	<li class="music-information simple-chapter"> (8:09) BWV846 by Johann Sebastian Bach </li>
+      </ul>
+      <video id="simple-target" controls> 
+        <source src="20180310-rehearsal.mp4">
+         other format of video may be required by some browzers -->
+<!--      </video>
+    </div> -->
+  </body>
+</html>
